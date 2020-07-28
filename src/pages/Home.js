@@ -1,7 +1,8 @@
 import React from 'react';
+import { Main } from '../components/Main';
 
-export function Home() {
-    return(
-        <div className="city-name">Chișinău, Moldova</div>
-    );
+export function Home(props) {
+    return (
+        <Main selectedCity={props.selectedCity} getSelectedCity={props.getSelectedCity} />
+    )
 }
