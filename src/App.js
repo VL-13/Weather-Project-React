@@ -40,7 +40,6 @@ class App extends Component {
             <NotFound />
           </Route>
         </Switch>
-        <Main />
         <Footer />
       </Router>
     );
