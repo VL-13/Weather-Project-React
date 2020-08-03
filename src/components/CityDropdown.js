@@ -7,6 +7,11 @@ export function CityDropdown(props) {
 
     const handleCityChange = (e) => {
         const city = e.target.value;
+        if(!cities[city]) 
+        {
+            props.getSelectedCity('');
+            return
+        }
         props.getSelectedCity(city)
     }
 

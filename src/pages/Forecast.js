@@ -1,6 +1,10 @@
 import React from 'react';
-export function Forecast() {
-    return(
-        <h1>Forecast info</h1>
-    );
+import { cities } from '../data/CitiesData';
+import { ForecastInfo} from '../components/ForecastInfo';
+export function Forecast(props) {
+    return (
+            <div className="forecast-infobox">
+                <ForecastInfo cityName={cities[props.selectedCity]}/>
+            </div>
+    )
 }

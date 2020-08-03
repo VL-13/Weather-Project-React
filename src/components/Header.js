@@ -8,6 +8,7 @@ export function Header() {
             <nav>
                 <ul>
                     <li id='index'><NavLink exact activeClassName="active" to="/">Home</NavLink></li>
+                    <li id='forecast'><NavLink exact activeClassName="active" to="/forecast">Forecast</NavLink></li>
                     <li id='list'><NavLink exact activeClassName="active" to="/list">Cities List</NavLink></li>
                     <li id='about'><NavLink exact activeClassName="active" to="/about">About</NavLink></li>
                 </ul>

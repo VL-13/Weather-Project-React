@@ -16,7 +16,7 @@ export const cities =  {
     name: "Brussels"
   },
   bucuresti: {
-    url: "https://ibishotels.ro/wp-content/uploads/2019/03/imagine-articol-ibis-Bucuresti-1.jpg",
+    url: "https://upload.wikimedia.org/wikipedia/commons/c/c4/View_from_the_Palace_of_Parliament_in_Bucharest.jpg",
     name: "Bucharest"
   },
   chisinau: {

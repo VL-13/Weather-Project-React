@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Main, Footer } from './components';
+import { Header, Footer } from './components';
 import { About, Home, List, Forecast, NotFound } from './pages';
 import {
   BrowserRouter as Router,
@@ -33,6 +33,9 @@ class App extends Component {
           <Route path="/list">
             <List />
           </Route>
+          <Route exact path="/forecast">
+          <Forecast />
+          </Route>
           <Route exact path="/">
             <Home selectedCity={this.state.selectedCity} getSelectedCity={this.getSelectedCity}  />
           </Route>
@@ -40,8 +43,8 @@ class App extends Component {
             <NotFound />
           </Route>
         </Switch>
-        <Main />
         <Footer />
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"></link>
       </Router>
     );
   }
